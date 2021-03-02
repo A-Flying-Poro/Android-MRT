@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MRTStationDB</string>
+
+    <string-array name="mrt_lines">
+        <item>North South Line</item>
+        <item>North East Line</item>
+        <item>East West Line</item>
+        <item>Circle Line</item>
+        <item>Downtown Line</item>
+        <item>Thomson-East Coast Line</item>
+    </string-array>
+    <string name="add_invalid">Invalid data input</string>
+    <string name="add_code_hint">Enter station code</string>
+    <string name="add_name_hint">Enter station name</string>
+    <string name="add_add">Add</string>
+    <string name="add_clear">Clear</string>
+</resources>

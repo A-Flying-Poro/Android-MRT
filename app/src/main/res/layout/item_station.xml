@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="edu.singaporetech.mrtstationdb.model.MrtStationModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_normal"
+        android:background="?selectableItemBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewStationCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{model.stationCode}"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            tools:text="NS15" />
+
+        <TextView
+            android:id="@+id/textViewStationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{model.stationName}"
+            android:textAlignment="viewStart"
+            tools:text="Yio Chu Kang" />
+
+        <TextView
+            android:id="@+id/textViewLineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{model.stationLine}"
+            android:textAlignment="viewStart"
+            tools:text="North South Line" />
+
+    </LinearLayout>
+</layout>
